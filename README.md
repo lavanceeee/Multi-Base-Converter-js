@@ -1,16 +1,8 @@
-# 河北工程大学在线代码转换工具 🚀
+# 河北成功大学进制转换工具 🚀
 
 <p align="center">
-  <img src="https://github.com/LiZhongpeng2/Base-conversion-tool/blob/main/demo.png" alt="项目Logo" width="200">
+  <img src="https://github.com/LiZhongpeng2/Base-conversion-tool/blob/main/demo.png" alt="项目Logo">
 </p>
-
-<p align="center">
-  <a href="#功能特点">功能特点</a> •
-  <a href="#快速开始">快速开始</a> •
-  <a href="#技术栈">技术栈</a> •
-  <a href="#项目展望">项目展望</a>
-</p>
-
 ## 📖 项目介绍
 
 这是一个简洁高效的代码转换工具，作为数据结构课程的期末设计作品。项目注重代码可读性，添加了详细的注释便于学习。虽然项目仍有提升空间，但这正是我们学习和进步的机会。
