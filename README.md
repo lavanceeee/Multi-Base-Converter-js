@@ -1,4 +1,4 @@
-# 河北成功大学进制转换工具 🚀
+# 河北成功大学 数据结构课设 进制转换工具 🚀
 
 <p align="center">
   <img src="https://github.com/LiZhongpeng2/Base-conversion-tool/blob/main/demo.png" alt="项目Logo">
