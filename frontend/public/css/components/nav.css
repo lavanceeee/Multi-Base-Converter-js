@@ -1,0 +1,73 @@
+.top-nav {
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--nav-shadow);
+    padding: 0 20px;
+    font-size: 18px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.school-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Sans-Serif';
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-left: -1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--btn-text);
+    border: none;
+    border-radius: 8px;
+    background: var(--btn-bg);
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.nav-btn i {
+    font-size: 1.1em;
+}
+
+.nav-btn:hover {
+    background-color: var(--btn-hover);
+    transform: translateY(-1px);
+}
+
+.nav-btn.active {
+    color: var(--btn-active);
+    background: var(--btn-active-bg);
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn[data-section="features"] i { color: #4CAF50; }
+.nav-btn[data-section="about"] i { color: #2196F3; }
+.nav-btn[data-section="github"] i { color: #9C27B0; }

@@ -1,0 +1,100 @@
+.main-content {
+    margin-left: 300px;
+    padding: 20px 40px;
+    padding-top: 90px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* 控制面板 */
+.control-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--control-panel-bg);
+    border-radius: 8px;
+    padding: 15px 20px;
+}
+
+/* 算法选择和进制选择按钮组 */
+.algorithm-selector,
+.base-selector {
+    display: flex;
+    gap: 10px;
+}
+
+/* 通用按钮样式 */
+.algo-btn,
+.base-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.algo-btn:hover,
+.base-btn:hover {
+    background: var(--btn-hover);
+}
+
+.algo-btn.active,
+.base-btn.active {
+    background: var(--btn-active);
+}
+
+/* 输入输出区域 */
+.input-section,
+.output-section {
+    background: var(--section-bg);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* 输入输出框 */
+.number-input,
+.number-output {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    background: var(--input-bg);
+    color: var(--input-text);
+    font-size: 16px;
+}
+
+.number-input:focus {
+    outline: none;
+    border-color: #1890ff;
+}
+
+.number-output {
+    background: rgba(255, 255, 255, 0.02);
+    cursor: not-allowed;
+    margin-bottom: 15px;
+}
+
+/* 可视化区域 */
+.visualization-section {
+    background: var(--section-bg);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.visualization-section h3 {
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.visualization-content {
+    background: var(--input-bg);
+    border-radius: 6px;
+    min-height: 300px;
+    padding: 20px;
+}

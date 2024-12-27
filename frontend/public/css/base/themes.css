@@ -1,0 +1,30 @@
+:root {
+    /* 深色主题（默认） */
+    --body-bg: #202123;
+    --nav-bg: rgba(32, 33, 35, 0.8);
+    --nav-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    --sidebar-bg: #2C2C2C;
+    --control-panel-bg: #2C2C2C;
+    --section-bg: #2C2C2C;
+    
+    /* 文字颜色 */
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    
+    /* 按钮颜色 */
+    --btn-bg: rgba(255, 255, 255, 0.1);
+    --btn-hover: rgba(255, 255, 255, 0.15);
+    --btn-text: #ffffff;
+    --btn-active: #1890ff;
+    --btn-active-bg: rgba(24, 144, 255, 0.2);
+    
+    /* 输入框 */
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --input-border: rgba(255, 255, 255, 0.1);
+    --input-text: #ffffff;
+    
+    /* 边框 */
+    --border-color: rgba(255, 255, 255, 0.1);
+    
+    --label-text: white;  /* 标签颜色 */
+} 

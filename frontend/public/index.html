@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>进制转换器</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="top-nav">
+        <div class="school-name">Hebei University of Engineering</div>
+        <ul>
+            <li>
+                <button class="nav-btn" data-section="features">
+                    <i class="fas fa-list-alt"></i>
+                    Function
+                </button>
+            </li>
+            <li>
+                <button class="nav-btn" data-section="about"
+                    onclick="window.open('https://github.com/LiZhongpeng2', '_blank')">
+                    <i class="fas fa-user"></i>
+                    About
+                </button>
+            </li>
+            <li>
+                <button class="nav-btn" data-section="github"
+                    onclick="window.open('https://github.com/LiZhongpeng2', '_blank')">
+                    <i class="fab fa-github"></i>
+                    Github
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 左侧边栏 -->
+    <!-- 这里重构为文件上传功能 -->
+    <!-- 提供文件的信息展示，功能包括：
+       1.获取二进制
+       2.获取十六进制
+       3.编码转换
+       4.文件校验等功能。-->
+
+    <aside class="sidebar left-sidebar">
+        <div class="sidebar-header">
+            <h2>File Process</h2>
+        </div>
+
+        <!-- 文件上传区 -->
+        <div class="file-upload-area">
+            <div class="upload-zone">
+                <input type="file" id="fileInput" class="file-input">
+                <div class="upload-hint">
+                    <i class="upload-icon">🫤</i>
+                    <p>Drag your files here...</p>
+                    <p>OR</p>
+                    <button class="upload-btn">Select File</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文件信息 -->
+        <div class="file-info">
+
+            <!-- 文件名 -->
+            <div class="info-item file-name">
+                <span class="label">File Name:</span>
+                <span class="value">-</span>
+            </div>
+
+            <!-- 文件大小 -->
+            <div class="info-item file-size">
+                <span class="label">File Size:</span>
+                <span class="value">-</span>
+            </div>
+
+            <!-- 文件类型 -->
+            <div class="info-item file-type">
+                <span class="label">File Type:</span>
+                <span class="value">-</span>
+            </div>
+        </div>
+
+        <!-- 按钮选择区域 -->
+        <div class="file-operations">
+            <!-- data-operation是自定义属性，用于标识按钮的功能，H5新增的属性 -->
+            <button class="operation-btn" data-operation="binary">获取二进制</button>
+            <button class="operation-btn" data-operation="hex">获取十六进制</button>
+            <button class="operation-btn" data-operation="verify">文件校验</button>
+        </div>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <!-- 输入区域 -->
+        <div class="input-section">
+            <div class="control-panel">
+                <!-- 算法选择 -->
+                <div class="algorithm-selector">
+                    <button class="algo-btn active" data-algo="stack">Stack Model</button>
+                    <button class="algo-btn" data-algo="array">Array Model</button>
+                    <button class="algo-btn" data-algo="recursive">Recursive Model</button>
+                </div>
+                <!-- 进制选择 -->
+                <div class="base-selector">
+                    <button class="base-btn" data-base="2">Binary</button>
+                    <button class="base-btn" data-base="8">Octal</button>
+                    <button class="base-btn active" data-base="10">Decimal</button>
+                    <button class="base-btn" data-base="16">Hex</button>
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="text" class="number-input" placeholder="Input the number here...">
+            </div>
+        </div>
+
+        <!-- 输出区域 -->
+        <div class="output-section">
+            <div class="output-area">
+                <input type="text" class="number-output" readonly>
+            </div>
+            <div class="base-selector">
+                <button class="base-btn active" data-base="2">Binary</button>
+                <button class="base-btn" data-base="8">Octal</button>
+                <button class="base-btn" data-base="10">Decimal</button>
+                <button class="base-btn" data-base="16">Hex</button>
+            </div>
+        </div>
+
+        <!-- 历史记录 -->
+        <div class="history-section">
+            <div class="history-header">
+                <h3>转换历史</h3>
+                <button class="clear-history-btn" title="清除历史记录">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+
+            <div class="history-list">
+            </div>
+        </div>
+        
+        <!-- 弹窗 -->
+        <div class="modal" id="featuresModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>数据结构课程设计</h2>
+                    <span class="close-btn">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <h3>功能说明</h3>
+                    <section class="feature-section">
+                        <h4>1. 进制转换功能</h4>
+                        <ul>
+                            <li>支持二进制、八进制、十进制、十六进制之间的相互转换</li>
+                            <li>提供栈实现、数组实现、递归实现三种算法</li>
+                            <li>实时可视化算法执行过程</li>
+                            <li>支持历史记录查看</li>
+                        </ul>
+                    </section>
+                    <section class="feature-section">
+                        <h4>2. 文件处理功能</h4>
+                        <ul>
+                            <li>支持任意文件的二进制/十六进制查看</li>
+                            <li>提供文件校验功能（CRC32）</li>
+                            <li>支持拖拽上传文件</li>
+                        </ul>
+                    </section>
+                    <section class="feature-section">
+                        <h4>技术栈</h4>
+                        <ul>
+                            <li>前端：原生 JavaScript + CSS3</li>
+                            <li>数据结构：栈、数组、递归</li>
+                            <li>文件处理：File API + Web Crypto API</li>
+                            <li>后端：Node.js + Express + MySQL</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

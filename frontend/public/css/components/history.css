@@ -1,0 +1,115 @@
+/* 历史记录区域样式 */
+.history-section {
+    margin-top: 20px;
+    background: var(--section-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 历史记录头部 */
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.history-header h3 {
+    color: var(--text-primary);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.clear-history-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.clear-history-btn:hover {
+    color: #ff4d4f;
+    background: rgba(255, 77, 79, 0.1);
+}
+
+/* 历史记录列表 */
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 历史记录项 */
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: var(--input-bg);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.history-item:hover {
+    background: var(--btn-hover);
+}
+
+/* 历史记录内容 */
+.history-content {
+    flex: 1;
+}
+
+.history-numbers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+    font-size: 1.1em;
+}
+
+.history-numbers sub {
+    color: var(--text-secondary);
+    font-size: 0.7em;
+}
+
+.history-numbers i {
+    color: var(--btn-active);
+    font-size: 0.9em;
+}
+
+/* 历史记录信息 */
+.history-info {
+    margin-top: 5px;
+    display: flex;
+    gap: 15px;
+    color: var(--text-secondary);
+    font-size: 0.85em;
+}
+
+/* 复制按钮 */
+.history-copy-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.history-copy-btn:hover {
+    color: var(--btn-active);
+    background: var(--btn-bg);
+}
+
+/* 空历史记录提示 */
+.history-empty {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-secondary);
+    font-style: italic;
+}

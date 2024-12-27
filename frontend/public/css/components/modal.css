@@ -1,0 +1,92 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: var(--section-bg);
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    color: var(--text-primary);
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.close-btn {
+    color: var(--text-secondary);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: var(--text-primary);
+}
+
+.modal-body {
+    padding: 20px;
+    color: var(--text-primary);
+}
+
+.feature-section {
+    margin-bottom: 20px;
+}
+
+.feature-section h4 {
+    color: var(--btn-active);
+    margin-bottom: 10px;
+}
+
+.feature-section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.feature-section li {
+    color: var(--text-secondary);
+    margin: 8px 0;
+    position: relative;
+}
+
+.feature-section li::before {
+    content: "•";
+    color: var(--btn-active);
+    position: absolute;
+    left: -15px;
+}

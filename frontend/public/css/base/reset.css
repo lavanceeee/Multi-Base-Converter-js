@@ -1,0 +1,12 @@
+/* 全局重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Consolas', monospace;
+}
+
+body {
+    background-color: var(--body-bg);
+    min-height: 100vh;
+}
