@@ -1,10 +1,5 @@
-# 数据结构课设 进制转换工具 
-
-<p align="center">
-  <img src="https://github.com/LiZhongpeng2/Base-conversion-tool/blob/main/demo.png" alt="项目Logo">
-</p>
-
-## demo介绍
+# RadixGo
+## DEMO介绍
 
 这是一个简洁高效的代码转换工具，作为数据结构课程的期末设计。
 
