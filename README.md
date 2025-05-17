@@ -10,7 +10,7 @@
 -  **实时预览** - 即时查看转换效果
 -  **一键复制** - 便捷的结果复制功能
 
-## 🛠️ 技术栈
+## 技术栈
 
 ### 前端技术
 - ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
