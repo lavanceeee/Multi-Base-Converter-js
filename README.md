@@ -3,8 +3,7 @@ An efficient and clean **Base conversion** tool implemented using multiple data 
 
 ## Stack
 + JavaScript
-+ Node.JS
-+ Express
++ Multi Data Sturcture: Arrays, Stack, Linked list
 
 ## Features
 
@@ -24,7 +23,7 @@ An efficient and clean **Base conversion** tool implemented using multiple data 
 
 **File upload** - Support for uploading files in formats such as PNG and JPG
 
-** Base conversation of file** - Retrieve binary and hexadecimal text formats of the uploaded files
+**Base conversation of file** - Retrieve binary and hexadecimal text formats of the uploaded files
 
 **SHA-256 verification** - Provide data verification capabilities for files
 
