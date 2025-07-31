@@ -3,7 +3,7 @@ An efficient and clean **Base conversion** tool implemented using multiple data 
 
 ## Stack
 + JavaScript
-+ Multi Data Sturcture: Arrays, Stack, Linked list
++ Multi Data Sturcture: Arrays, Stack, Linked list, also Recursion
 
 ## Features
 
