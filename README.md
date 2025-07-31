@@ -1,12 +1,14 @@
-# RadixGo
+# Multi-algorithm-Base-Converter-js
+An efficient and clean **Base conversion** tool implemented using multiple data structures.
 
-这是一个简洁高效的代码转换工具，作为数据结构课程的期末设计。
+# Stack
++ JavaScript
++ Node.JS
++ Express
 
-## 功能特点
-
--  **代码格式化** - 支持多种编程语言，规范代码结构
--  **大小写转换** - 快速切换代码大小写
--  **空格处理** - 智能处理代码空格
--  **实时预览** - 即时查看转换效果
--  **一键复制** - 便捷的结果复制功能
+## Feature
+**Case Conversion** - Quickly switch code between different cases
+**Whitespace Handling** - Intelligently process code spacing
+**Live Preview** - Instantly view conversion results
+**One-Click Copy** - Conveniently copy the processed code
 
